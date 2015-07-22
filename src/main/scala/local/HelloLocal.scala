@@ -14,7 +14,7 @@ class LocalActor extends Actor {
 
   // create the remote actor
   val remote = context.actorFor("akka://HelloRemoteSystem@127.0.0.1:5150/user/RemoteActor")
-  var counter = 0
+  val counter = 0
 
   def receive = {
     case "START" =>
